@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.3-SNAPSHOT'
+	id 'fabric-loom' version '1.6-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -63,15 +63,15 @@ dependencies {
 	// Extras
 	include(modImplementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.2.0")))
     // LevelZ
-    modCompileOnly ('maven.modrinth:levelz:1.4.10+1.20.1') {
+    modCompileOnly ("curse.maven:levelz-517130:5024636") {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
 	// TooltipFix
-	modCompileOnly ("maven.modrinth:tooltipfix:1.1.1-1.19.3"),{
+	modCompileOnly ("curse.maven:tooltipfix-411557:4577194"),{
     	exclude(group: "net.fabricmc.fabric-api")
   	}
 	// EasyAnvils
-	modCompileOnly ("curse.maven:easy-anvils-682567:4556543"),{
+	modCompileOnly ("curse.maven:easy-anvils-682567:5156623"),{
     	exclude(group: "net.fabricmc.fabric-api")
   	}
 	// Additional Entity Attributes
